@@ -1,0 +1,41 @@
+<PISI>
+    <Source>
+        <Name>gogland</Name>
+        <Packager>
+            <Name>Silke Hofstra</Name>
+            <Email>silke@slxh.eu</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <License>Proprietary</License>
+        <PartOf>programming</PartOf>
+        <Summary xml:lang="en">Gogland - an IDE for the Go Language</Summary>
+        <Description xml:lang="en">Gogland - an IDE for the Go Language</Description>
+        <Archive type="targz" sha1sum="91f1aaac70c16d45ce30f8f4c330570bc9bcc431">https://download.jetbrains.com/go/gogland-172.3757.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>gogland</Name>
+        <Summary xml:lang="en">Gogland - an IDE for the Go Language</Summary>
+        <Description xml:lang="en">Gogland - an IDE for the Go Language</Description>
+        <PartOf>programming</PartOf>
+        <Files>
+            <Path fileType="data">/opt/gogland</Path>
+            <Path fileType="data">/usr/bin/gogland</Path>
+            <Path fileType="data">/usr/share/applications/gogland.desktop</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gogland.desktop">gogland.desktop</AdditionalFile>
+        </AdditionalFiles>
+        <RuntimeDependencies>
+            <Dependency>openjdk-8</Dependency>
+        </RuntimeDependencies>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-08-17</Date>
+            <Version>172.3757.2</Version>
+            <Comment>Initial working Gogland</Comment>
+            <Name>Silke Hofstra</Name>
+            <Email>silke@slxh.eu</Email>
+        </Update>
+    </History>
+</PISI>
